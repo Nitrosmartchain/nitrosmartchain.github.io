@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nixovus</title>
+    <link rel="stylesheet" href="./build/tailwind.css" />
+  </head>
+  <body class="relative bg-background">
+    <!-- START navbar -->
+    <div
+      class="flex justify-between sticky top-0 z-10 px-4 py-4 lg:mt-8 sm:h-20 text-white items-center container max-w-screen-2xl m-auto bg-[#2E303D] bg-opacity-5 rounded-b-md backdrop-blur-sm"
+    >
+      <div>
+        <h1
+          class="text-2xl font-black bg-gradient-to-r from-[#E438B4] to-[#2e2e31] bg-clip-text cursor-pointer text-transparent mt-2 sm:mt-0 md:text-2xl lg:text-5xl"
+        >
+          NIXOVUS
+        </h1>
+      </div>
+      <div id="hamburger" class="grid gap-1 cursor-pointer sm:hidden z-20">
+        <div class="w-8 h-0.5 rounded-full bg-white"></div>
+        <div class="w-8 h-0.5 rounded-full bg-white"></div>
+        <div class="w-8 h-0.5 rounded-full bg-white"></div>
+      </div>
+      <div class="items-center justify-center hidden sm:flex">
+        <ul
+          class="flex gap-3 sm:gap-4 lg:gap-6 font-light md:text-lg md:font-normal"
+        >
+          <li>
+            <a
+              class="opacity-70 hover:opacity-100 cursor-pointer duration-200"
+              href="#"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="opacity-70 hover:opacity-100 cursor-pointer duration-200"
+              href="#"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              class="opacity-70 hover:opacity-100 cursor-pointer duration-200"
+              href="#"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              class="opacity-70 hover:opacity-100 cursor-pointer duration-200"
+              href="#"
+              >Blogs</a
+            >
+          </li>
+        </ul>
+        <div class="ml-10 mb-1">
+          <div
+            style="max-width: 240px"
+            class="flex rounded-lg mx-auto bg-gradient-to-tl from-[#3C38E4] to-[#E438B4] p-0.5 shadow-lg"
+          >
+            <button
+              class="flex-1 font-normal text-sm bg-background px-3 py-1 lg:px-6 lg:py-2 rounded-lg md:text-lg md:font-bold"
+            >
+              Sign in
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="hamburger-show"
+      class="w-full h-96 fixed z-10 -mt-1 bg-[#2E303D] bg-opacity-5 rounded-b-md backdrop-blur-sm sm:hidden"
+    >
+      <div class="flex items-center flex-col justify-center h-full sm:hidden">
+        <ul class="flex-col w-full text-center text-white font-bold gap-3">
+          <li
+            class="opacity-70 hover:opacity-100 cursor-pointer duration-200 py-6"
+          >
+            <a href="#">Home</a>
+          </li>
+          <li
+            class="opacity-70 hover:opacity-100 cursor-pointer duration-200 py-6"
+          >
+            <a href="#">Services</a>
+          </li>
+          <li
+            class="opacity-70 hover:opacity-100 cursor-pointer duration-200 py-6"
+          >
+            <a href="#">Projects</a>
+          </li>
+          <li
+            class="opacity-70 hover:opacity-100 cursor-pointer duration-200 py-6"
+          >
+            <a href="#">Blogs</a>
+          </li>
+        </ul>
+        <div class="ml-2 mb-1">
+          <div
+            style="max-width: 240px"
+            class="flex rounded-lg mx-auto bg-gradient-to-tl from-[#3C38E4] to-[#E438B4] p-0.5 shadow-lg"
+          >
+            <button
+              class="flex-1 font-normal text-sm bg-background text-white px-20 py-2 rounded-lg"
+            >
+              Sign in
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END navbar -->
+
+    <!-- START main -->
+    <div
+      class="w-full sm:h-[400px] md:h-[550px] px-2 flex flex-col items-center sm:flex-row-reverse sm:justify-between sm:items-start md:items-center md:-mt-28 xl:mt-10 container m-auto"
+    >
+      <div>
+        <img
+          class="fixed top-0 right-0 -z-50 xl:w-[1200px] xl:h-[1250px] xl:right-0"
+          src="../assets/image/Vector.svg"
+          alt="vector"
+        />
+      </div>
+      <div
+        class="sm:w-1/2 flex items-center justify-center -z-40 md:justify-end"
+      >
+        <div
+          class="w-[304px] md:w-[400px] xl:w-[650px] h-56 md:h-56 mt-5 flex justify-center items-center relative"
+        >
+          <img
+            class="w-38 h-32 md:w-72 md:h-56 xl:w-[800px] xl:h-80"
+            src="../assets/image/image-main.svg"
+            alt=""
+          />
+          <div
+            class="w-20 h-16 md:w-28 md:h-20 xl:w-52 xl:h-32 text-yellow-400 flex justify-center items-center flex-col font-black bg-[#181920] bg-opacity-0 rounded-b-md backdrop-blur-sm absolute top-5 left-6 md:-top-8 xl:-top-28 xl:left-5 rounded-lg border-[#993c7f] border-2"
+          >
+            <p class="text-[12px] md:text-xl xl:text-5xl">120+</p>
+            <p class="text-[9px] md:text-xs xl:text-xl font-medium mt-1">
+              Team Members
+            </p>
+          </div>
+          <div
+            class="w-20 h-16 md:w-28 md:h-20 xl:w-52 xl:h-32 text-green-400 flex flex-col justify-center items-center font-black bg-[#181920] bg-opacity-0 rounded-b-md backdrop-blur-sm absolute bottom-5 right-6 md:-bottom-6 xl:-bottom-28 xl:right-5 rounded-lg border-[#993c7f] border-2"
+          >
+            <p class="text-[12px] md:text-xl xl:text-5xl">500+</p>
+            <p class="text-[9px] md:text-xs xl:text-xl font-medium mt-1">
+              Team Members
+            </p>
+          </div>
+          <img
+            class="absolute w-12 top-8 xl:w-24 right-12 md:right-4 md:-top-5 xl:-top-28 xl:right-6"
+            src="../assets/image/Vector-right.svg"
+            alt=""
+          />
+          <img
+            class="absolute w-12 xl:w-24 bottom-8 left-12 md:left-4 md:-bottom-5 xl:-bottom-28 xl:left-6"
+            src="../assets/image/Vector-left.svg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div
+        class="sm:w-1/2 sm:items-center flex justify-center md:justify-start"
+      >
+        <div
+          class="w-[304px] md:w-[400px] xl:w-[550px] h-[224px] sm:h-96 md:h-[224px] px-4 relative -z-40"
+        >
+          <div
+            class="flex flex-col justify-center items-center sm:justify-start mt-3 text-center"
+          >
+            <img
+              class="absolute -z-30 w-20 top-4 left-16 md:w-28 md:left-14 md:top-3 lg:left-[70px] xl:w-56 xl:left-5 xl:top-4"
+              src="../assets/image/Text.svg"
+              alt=""
+            />
+            <img
+              class="absolute -z-30 w-7 -top-2 left-11 md:-left-2 md:-top-5 md:w-10 xl:-left-5 xl:-top-14 xl:w-14"
+              src="../assets/image/Burst.svg"
+              alt=""
+            />
+            <p
+              class="text-white font-bold text-base md:text-2xl xl:text-5xl leading-8 xl:mb-5 xl:leading-normal"
+            >
+              Impactful Solutions for <br />
+              Your Business
+            </p>
+            <p
+              class="text-white font-medium text-xs mt-3 opacity-70 text-justify md:text-sm xl:leading-loose"
+            >
+              Get impactful digital solutions that are tailored to your
+              company's needs and reach the right audience; from web development
+              and design to marketing automation, we can help you grow.
+            </p>
+            <div
+              class="w-full xl:mt-10 flex flex-col sm:flex-row-reverse items-center"
+            >
+              <div
+                class="w-full py-3 xl:py-0 flex justify-center mr-2 cursor-pointer"
+              >
+                <span class="text-white flex items-center text-xs opacity-80"
+                  ><div
+                    class="w-9 h-9 bg-slate-400 rounded-full text-center flex justify-center items-center bg-opacity-30 backdrop-blur-sm mr-2"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="size-6 text-white shadow-2xl"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  Watch intro
+                </span>
+              </div>
+              <div
+                style="max-width: 300px"
+                class="flex rounded-lg mx-auto bg-gradient-to-tl from-[#3C38E4] to-[#E438B4] p-0.5 shadow-lg mt-2 xl:mt-0 hover:cursor-pointer"
+              >
+                <button
+                  class="flex-1 font-bold text-sm bg-background text-white px-20 py-2 sm:px-6 sm:py-2 md:px-16 xl:px-20 rounded-lg"
+                >
+                  Learn
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END main -->
+
+    <!-- START Services -->
+    <div
+      class="mt-16 sm:mt-0 xl:mt-32 flex flex-col items-center xl:items-start container max-w-screen-2xl m-auto"
+    >
+      <div class="flex items-end xl:items-center mb-2 sm:mb-4 xl:mb-8">
+        <div
+          class="w-1 h-7 xl:w-2 xl:h-12 bg-gradient-to-bl from-[#3C38E4] to-[#E438B4] rounded-full"
+        ></div>
+        <span class="text-white mx-2 xl:mt-2 xl:text-3xl xl:font-bold"
+          >Our Services</span
+        >
+        <div
+          class="w-1 h-7 bg-gradient-to-bl from-[#3C38E4] to-[#E438B4] rounded-full xl:hidden"
+        ></div>
+      </div>
+      <div class="flex justify-center flex-col">
+        <div
+          class="grid grid-rows-2 gap-2 sm:grid-cols-2 sm:gap-4 md:grid-cols-3 xl:gap-y-14 xl:gap-x-32"
+        >
+          <div
+            class="w-[208px] h-[92px] lg:w-[300px] lg:h-[140px] xl:w-[422px] xl:h-[190px] rounded-xl xl:rounded-3xl flex justify-center items-center bg-gradient-to-br hover:bg-gradient-to-tl from-[#3C38E4] to-[#E438B4] cursor-pointer"
+          >
+            <div
+              class="flex w-[204px] h-[88px] lg:w-[294px] lg:h-[134px] xl:w-[416px] xl:h-[184px] p-2 xl:p-8 rounded-xl xl:rounded-3xl bg-[#0F1137]"
+            >
+              <div>
+                <img
+                  class="w-20 pr-2"
+                  src="../assets/image/ui-ux.svg"
+                  alt="ui-ux"
+                />
+              </div>
+              <div class="xl:mt-2 xl:ml-2">
+                <span class="text-white text-base xl:text-lg xl:font-semibold"
+                  >UI & UX Design</span
+                >
+                <p
+                  class="text-white text-[10px] xl:text-sm xl:leading-6 xl:opacity-60 xl:mt-5"
+                >
+                  Get impactful digital solutions that are tailored to your
+                  company's tailored to
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-[208px] h-[92px] lg:w-[300px] lg:h-[140px] xl:w-[422px] xl:h-[190px] rounded-xl xl:rounded-3xl flex justify-center items-center bg-gradient-to-br hover:bg-gradient-to-tl from-[#3C38E4] to-[#E438B4] cursor-pointer"
+          >
+            <div
+              class="flex w-[204px] h-[88px] lg:w-[294px] lg:h-[134px] xl:w-[416px] xl:h-[184px] p-2 xl:p-8 rounded-xl xl:rounded-3xl bg-[#0F1137]"
+            >
+              <div>
+                <img
+                  class="w-20 pr-2"
+                  src="../assets/image/web.svg"
+                  alt="ui-ux"
+                />
+              </div>
+              <div class="xl:mt-2 xl:ml-2">
+                <span class="text-white text-sm xl:text-lg xl:font-semibold"
+                  >Web Development</span
+                >
+                <p
+                  class="text-white text-[10px] xl:text-sm xl:leading-6 xl:opacity-60 xl:mt-5"
+                >
+                  Get impactful digital solutions that are tailored to your
+                  company's tailored to
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-[208px] h-[92px] lg:w-[300px] lg:h-[140px] xl:w-[422px] xl:h-[190px] rounded-xl xl:rounded-3xl flex justify-center items-center bg-gradient-to-br hover:bg-gradient-to-tl from-[#3C38E4] to-[#E438B4] cursor-pointer"
+          >
+            <div
+              class="flex w-[204px] h-[88px] lg:w-[294px] lg:h-[134px] xl:w-[416px] xl:h-[184px] p-2 xl:p-8 rounded-xl xl:rounded-3xl bg-[#0F1137]"
+            >
+              <div>
+                <img
+                  class="w-20 pr-2"
+                  src="../assets/image/app.svg"
+                  alt="ui-ux"
+                />
+              </div>
+              <div class="xl:mt-2 xl:ml-2">
+                <span class="text-white text-sm xl:text-lg xl:font-semibold"
+                  >App Development</span
+                >
+                <p
+                  class="text-white text-[10px] xl:text-sm xl:leading-6 xl:opacity-60 xl:mt-5"
+                >
+                  Get impactful digital solutions that are tailored to your
+                  company's tailored to
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-[208px] h-[92px] lg:w-[300px] lg:h-[140px] xl:w-[422px] xl:h-[190px] rounded-xl xl:rounded-3xl flex justify-center items-center bg-gradient-to-br hover:bg-gradient-to-tl from-[#3C38E4] to-[#E438B4] cursor-pointer"
+          >
+            <div
+              class="flex w-[204px] h-[88px] lg:w-[294px] lg:h-[134px] xl:w-[416px] xl:h-[184px] p-2 xl:p-8 rounded-xl xl:rounded-3xl bg-[#0F1137]"
+            >
+              <div>
+                <img
+                  class="w-20 pr-2"
+                  src="../assets/image/branding.svg"
+                  alt="ui-ux"
+                />
+              </div>
+              <div class="xl:mt-2 xl:ml-2">
+                <span class="text-white text-sm xl:text-lg xl:font-semibold"
+                  >Logo & Branding</span
+                >
+                <p
+                  class="text-white text-[10px] xl:text-sm xl:leading-6 xl:opacity-60 xl:mt-5"
+                >
+                  Get impactful digital solutions that are tailored to your
+                  company's tailored to
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-[208px] h-[92px] lg:w-[300px] lg:h-[140px] xl:w-[422px] xl:h-[190px] rounded-xl xl:rounded-3xl flex justify-center items-center bg-gradient-to-br hover:bg-gradient-to-tl from-[#3C38E4] to-[#E438B4] cursor-pointer"
+          >
+            <div
+              class="flex w-[204px] h-[88px] lg:w-[294px] lg:h-[134px] xl:w-[416px] xl:h-[184px] p-2 xl:p-8 rounded-xl xl:rounded-3xl bg-[#0F1137]"
+            >
+              <div>
+                <img
+                  class="w-20 pr-2"
+                  src="../assets/image/digital.svg"
+                  alt="ui-ux"
+                />
+              </div>
+              <div class="xl:mt-2 xl:ml-2">
+                <span class="text-white text-sm xl:text-lg xl:font-semibold"
+                  >Digital Marketing</span
+                >
+                <p
+                  class="text-white text-[10px] xl:text-sm xl:leading-6 xl:opacity-60 xl:mt-5"
+                >
+                  Get impactful digital solutions that are tailored to your
+                  company's tailored to
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-[208px] h-[92px] lg:w-[300px] lg:h-[140px] xl:w-[422px] xl:h-[190px] rounded-xl xl:rounded-3xl flex justify-center items-center bg-gradient-to-br hover:bg-gradient-to-tl from-[#3C38E4] to-[#E438B4] cursor-pointer"
+          >
+            <div
+              class="flex w-[204px] h-[88px] lg:w-[294px] lg:h-[134px] xl:w-[416px] xl:h-[184px] p-2 xl:p-8 rounded-xl xl:rounded-3xl bg-[#0F1137]"
+            >
+              <div>
+                <img
+                  class="w-20 pr-2"
+                  src="../assets/image/seo.svg"
+                  alt="ui-ux"
+                />
+              </div>
+              <div class="xl:mt-2 xl:ml-2">
+                <span class="text-white text-sm xl:text-lg xl:font-semibold"
+                  >Analytics & Seo</span
+                >
+                <p
+                  class="text-white text-[10px] xl:text-sm xl:leading-6 xl:opacity-60 xl:mt-5"
+                >
+                  Get impactful digital solutions that are tailored to your
+                  company's tailored to
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Services -->
+
+    <!-- START why Nix -->
+    <div
+      class="px-4 flex flex-col justify-center items-center sm:my-16 container max-w-screen-2xl m-auto"
+    >
+      <div
+        class="w-64 sm:w-full flex flex-col-reverse justify-center items-center sm:flex-row xl:justify-between"
+      >
+        <div class="text-center relative sm:w-1/3 md:w-96 xl:w-1/2">
+          <img
+            class="w-16 absolute -top-14 right-0 lg:w-24 xl:-top-28 xl:w-32 xl:-right-8"
+            src="./assets/image/Arrow.svg"
+            alt="Arrow"
+          />
+          <span class="text-white text-base font-bold lg:text-2xl xl:text-4xl"
+            >A platform powered by artificial intelligence to analyze financial
+            markets</span
+          >
+          <p
+            class="text-xs opacity-60 text-white lg:text-lg xl:leading-8 xl:mt-8"
+          >
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
+            maiores voluptatem vero natus, hic consequuntur reiciendis non ipsam
+            harum repellendus, esse tempora quisquam quis expedita accusamus
+            magnam dolore.
+          </p>
+        </div>
+        <div class="sm:w-1/2 flex items-center justify-center xl:w-1/2">
+          <img
+            class="mb-5 w-56 sm:w-96 lg:w-[500px] xl:w-[700px]"
+            src="../assets/image/nix.svg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div
+        class="w-64 sm:w-full flex justify-center items-center sm:flex-row xl:justify-between"
+      >
+        <div class="sm:w-1/2 flex items-center justify-center xl:w-1/2">
+          <img
+            class="mb-5 w-56 sm:w-96 lg:w-[500px] xl:w-[900px]"
+            src="../assets/image/laptop.svg"
+            alt=""
+          />
+        </div>
+        <div class="text-center relative sm:w-1/3 md:w-96 xl:w-1/2">
+          <img
+            class="w-16 absolute -top-14 left-0 lg:w-24 xl:-top-28 xl:w-32 xl:-left-8"
+            src="../assets/image/Arrow-left.svg"
+            alt="Arrow"
+          />
+          <span class="text-white text-base font-bold lg:text-2xl xl:text-4xl"
+            >A platform powered by artificial intelligence to analyze financial
+            markets</span
+          >
+          <p
+            class="text-xs opacity-60 text-white lg:text-lg xl:leading-8 xl:mt-8"
+          >
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
+            maiores voluptatem vero natus, hic consequuntur reiciendis non ipsam
+            harum repellendus, esse tempora quisquam quis expedita accusamus
+            magnam dolore.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- START Sponser -->
+    <div
+      class="m-auto grid grid-cols-2 gap-1 mt-24 mb-8 sm:my-0 md:mt-8 xl:mt-[117px] rounded-sm xl:rounded-lg py-4 sm:grid-cols-1 sm:grid-rows-2 sm:gap-y-5 xl:grid-rows-1 xl:grid-cols-2 container max-w-screen-2xl bg-[#2E303D] bg-opacity-10 rounded-b-md backdrop-blur-sm"
+    >
+      <div
+        class="grid grid-rows-3 sm:grid-cols-3 sm:grid-rows-none justify-center sm:justify-items-center gap-3"
+      >
+        <img
+          class="w-14 sm:w-16 md:w-24 cursor-pointer"
+          src="../assets/image/Company-1.svg"
+          alt="company"
+        />
+        <img
+          class="w-14 sm:w-16 md:w-24 cursor-pointer"
+          src="../assets/image/Company-2.svg"
+          alt="company"
+        />
+        <img
+          class="w-14 sm:w-16 md:w-24 cursor-pointer"
+          src="../assets/image/Company-3.svg"
+          alt="company"
+        />
+      </div>
+      <div
+        class="grid grid-rows-3 sm:grid-cols-3 sm:grid-rows-none justify-center sm:justify-items-center gap-3"
+      >
+        <img
+          class="w-14 sm:w-16 md:w-24 cursor-pointer"
+          src="../assets/image/Company-5.svg"
+          alt="company"
+        />
+        <img
+          class="w-14 sm:w-16 md:w-24 cursor-pointer"
+          src="../assets/image/Company-3.svg"
+          alt="company"
+        />
+        <img
+          class="w-14 sm:w-16 md:w-24 cursor-pointer"
+          src="../assets/image/Company-4.svg"
+          alt="company"
+        />
+      </div>
+    </div>
+    <!-- END Sponser -->
+  </body>
+  <script src="../src/js/main.js"></script>
+</html>
